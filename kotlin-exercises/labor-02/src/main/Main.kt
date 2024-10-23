@@ -7,19 +7,53 @@ import kotlin.random.Random
 
 fun main(){
 
+    val dictionary: IDictionary = DictionaryProvider.createDictionary(DictionaryType.TREE_SET)
+
+    dictionary.add("apple")
+    dictionary.add("banana")
+    dictionary.add("cherry")
+
+    println("Find 'apple': ${dictionary.find("apple")}")
+    println("Find 'grape': ${dictionary.find("grape")}")
+
+    println("Dictionary size: ${dictionary.size()}")
+
+    println("\n")
+
+    val name = "Peter Akos"
+    println(name.toMonogram())
+
+    println("\n")
+
+    val fruits = listOf("apple", "pear", "melon")
+    println(fruits.joinWithSeparator("**"))
+
+    println("\n")
+
+    val cars = listOf("Opel", "Mercedes", "Audi", "Ferrari")
+    println(cars.longest())
+
+    println("\n")
+
     val currentDate = Date()
     println(currentDate)
 
-    val currentDate2 = Date(2024, 2, 29)
+    println("\n")
+
+    val currentDate2 = Date(2024, 9, 14)
     println("Year ${currentDate2.year} is a leap year: ${currentDate2.isLeapYear()}")
+
+    println("\n")
 
     val validDate = Date(2024, 2, 29)
     val invalidDate = Date(2023, 2, 29)
 
-    println("src.main.Date ${validDate.year}-${validDate.month}-${validDate.day} is valid: ${validDate.isValid()}")
-    println("src.main.Date ${invalidDate.year}-${invalidDate.month}-${invalidDate.day} is valid: ${invalidDate.isValid()}")
+    println("\n")
 
-    val validDates = mutableSetOf<Date>()  // Use a set to ensure uniqueness
+    println("Date ${validDate.year}-${validDate.month}-${validDate.day} is valid: ${validDate.isValid()}")
+    println("Date ${invalidDate.year}-${invalidDate.month}-${invalidDate.day} is valid: ${invalidDate.isValid()}")
+
+    val validDates = mutableSetOf<Date>()
 
     while (validDates.size < 10) {
         val randomDate = generateRandomDate()  // Generate a random date
@@ -69,12 +103,12 @@ fun main(){
 }
 
 
-fun String.nameMonogram():String {
+fun String.toMonogram():String {
     return this.split(" ").map {it[0]}.joinToString(" ")
 }
-fun List<String>.joinElements(separator:String):String = this.joinToString(separator)
+fun List<String>.joinWithSeparator(separator:String):String = this.joinToString(separator)
 
-fun List<String>.getLongestElement():String = this.maxByOrNull { it.length } ?: "N/A"
+fun List<String>.longest():String = this.maxByOrNull { it.length } ?: "N/A"
 
 fun Date.isLeapYear(): Boolean {
     return (this.year % 4 == 0 && this.year % 100 != 0) || (this.year % 400 == 0)

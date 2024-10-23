@@ -7,7 +7,7 @@ interface IDictionary {
     fun size(): Int
 
     companion object{
-        const val DICTIONARY_NAME = "C:\\Users\\zsolt\\Desktop\\android_2024\\kotlin-exercises\\labor-02\\src\\resources\\words"
+        const val DICTIONARY_NAME = "C:\\Users\\PakiLaptop\\Desktop\\Android-main\\Android-2023\\kotlin-exercises\\labor-02\\src\\resources\\words"
     }
 
 }
