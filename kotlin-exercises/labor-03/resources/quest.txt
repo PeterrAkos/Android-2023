@@ -1,0 +1,119 @@
+Hogyan jelölünk egy függvényt, amely egy másik függvény paramétereként fogadható el Kotlinban?
+Lambda
+Higher-order
+Anonymous
+Inline
+1
+---
+Mi a különbség a 'val' és a 'var' között Kotlinban?
+val egy változó, var pedig egy állandó
+val nem változtatható, var változtatható
+Mindkettő változó, de különböző típusúak
+Nincs különbség közöttük
+1
+---
+Hogyan hozunk létre egy változó nélküli null-típusú értéket Kotlinban?
+null
+none
+empty
+void
+0
+---
+Melyik kulcsszóval jelezzük, hogy egy osztály örökölhető Kotlinban?
+final
+open
+extends
+sealed
+1
+---
+Melyik függvény használható egy listán az elemek módosítása nélkül egy új lista létrehozására?
+forEach
+map
+filter
+add
+1
+---
+Melyik kulcsszó jelzi, hogy egy függvény paramétereinek száma változó lehet Kotlinban?
+args
+list
+vararg
+dynamic
+2
+---
+Mi a Kotlin ‘when’ szerkezet leginkább megfelelő alternatívája más programozási nyelvekben?
+switch
+if-else
+select-case
+loop
+0
+---
+Mi történik, ha egy `val`-lal deklarált változót újra megpróbálunk értéket adni?
+Hibaüzenetet kapunk
+Új értéket kap a változó
+Két változó jön létre
+Semmi nem történik
+0
+---
+Melyik kulcsszóval hozunk létre interfészt Kotlinban?
+interface
+abstract
+implements
+protocol
+0
+---
+Hogyan deklarálhatunk egy egyszerű tömböt Kotlinban?
+arrayOf()
+listOf()
+mutableListOf()
+new Array()
+0
+---
+Mi a Kotlin alapértelmezett csomagkezelője?
+Maven
+Gradle
+npm
+Ivy
+1
+---
+Hogyan jelezzük, hogy egy függvény kivételt dobhat Kotlinban?
+throw
+throws
+try-catch
+Nincs szükség kulcsszóra
+3
+---
+Melyik függvény használható a kollekciók szűrésére Kotlinban?
+select
+filter
+map
+reduce
+1
+---
+Hogyan deklarálhatunk egy extension function-t Kotlinban?
+fun Type.functionName() { ... }
+def Type.functionName() { ... }
+Type::functionName { ... }
+extend Type functionName() { ... }
+0
+---
+Mi a különbség az `==` és a `===` operátorok között Kotlinban?
+Mindkettő ugyanazt jelenti
+`==` értékek összehasonlítása, `===` referencia összehasonlítása
+`===` értékek összehasonlítása, `==` referencia összehasonlítása
+Csak az `===` létezik Kotlinban
+1
+---
+Hogyan jelöljük a lambdafüggvény paramétereit Kotlinban?
+It
+Lambda
+Param
+Fun
+0
+---
+Melyik kulcsszóval hozhatunk létre egy singleton objektumot Kotlinban?
+class
+object
+singleton
+unique
+1
+---
