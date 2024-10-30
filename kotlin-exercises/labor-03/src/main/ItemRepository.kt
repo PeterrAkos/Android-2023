@@ -6,7 +6,7 @@ class ItemRepository {
     private val items = mutableListOf<Item>()
 
     init {
-        loadItemsFromFile("resources/quest.txt")
+        loadItemsFromFile("C:\\Users\\PakiLaptop\\Desktop\\Android-main\\Android-2023\\kotlin-exercises\\labor-03\\resources\\quest.txt")
     }
 
     private fun loadItemsFromFile(fileName: String) {

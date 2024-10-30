@@ -35,13 +35,13 @@ fun main(){
 
     println("\n")
 
-    val currentDate = Date()
-    println(currentDate)
+    val Date = Date()
+    println(Date)
 
     println("\n")
 
-    val currentDate2 = Date(2024, 9, 14)
-    println("Year ${currentDate2.year} is a leap year: ${currentDate2.isLeapYear()}")
+    val Date2 = Date(2024, 9, 14)
+    println("Year ${Date2.year} is a leap year: ${Date2.isLeapYear()}")
 
     println("\n")
 
