@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Kiválasztott állapot színe -->
+    <item android:state_checked="true" android:color="#8B4513"/> <!-- Sötétbarna kiválasztott -->
+    <!-- Nem kiválasztott állapot színe -->
+    <item android:color="#D2B48C"/> <!-- Világosbarna nem kiválasztott -->
+</selector>
